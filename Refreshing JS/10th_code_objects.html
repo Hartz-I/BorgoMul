@@ -1,0 +1,41 @@
+<script type="text/javascript">
+	//objects: similar to arrays but intead of index we use properties
+
+	var ourDog={
+		"name":"Camper",
+		"legs": 4,
+		"tails": 1,
+		"friends": ["Everything"]
+	};
+
+	var myDog={
+		"name": "Quincy",
+		"legs": 3,
+		"tails": 2,
+		"friends": []
+	};
+
+	//dot notation
+	var nameValue=myDog.hat;
+	var tailsValue=myDog.tails;
+
+	console.log(tailsValue);
+
+	//also can be accessed by bracket notation
+
+	//if there is a space between property then bracket notation is a must
+
+	console.log(myDog["name"])
+
+	var index="legs"
+	console.log(ourDog[index])
+
+	//changing value
+	ourDog[index]=99
+	console.log(ourDog.legs)
+
+	//adding property
+	ourDog.bark="bowow"
+
+	console.log(ourDog.bark)
+</script>
