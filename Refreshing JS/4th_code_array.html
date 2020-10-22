@@ -1,0 +1,54 @@
+<script type="text/javascript">
+	var ourArray=["John",23]
+
+	var myArray=["Quency",1];
+
+	console.log(ourArray)
+
+	//nested array
+	//array in array
+
+	var nestArr=["a",["arry",34],45]
+	console.log(nestArr)
+
+	//indexing array
+	console.log(ourArray[1])
+	console.log(nestArr[1])
+	console.log(nestArr[1][0])
+
+	//we can modify the values in arrays!
+	nestArr[2]="4564780"
+
+	console.log(nestArr)
+
+	//appending with push function
+	myArray.push(nestArr);
+	console.log(myArray)
+	nestArr.push(2,3,4)
+	console.log(nestArr)
+	nestArr.push([2,3,4,5,68])
+	console.log(nestArr)
+
+	//removing item with pop function
+	var lastElem;
+	lastElem=nestArr.pop() //here last elem will be added to the variable and the last element of the array would be removed
+	console.log(lastElem)
+	console.log(nestArr)
+
+	//shift function removes the first element
+	var firstElem;
+	firstElem=nestArr.shift()
+	console.log(firstElem)
+	console.log(nestArr)
+
+
+	//unshift adds value in the beginning
+	myArray.unshift("cat");
+	console.log(myArray)
+
+
+	//nested array ex: shoppinglist
+
+	var myList=[["cerial",3],["milk",2],["bananas",3],["juice",2],["eggs",12]]
+	console.log(myList)
+</script>

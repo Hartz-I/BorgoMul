@@ -1,0 +1,72 @@
+<script type="text/javascript">
+
+	function name(variables){
+		console.log("Heya, World!")
+	}
+
+	name()
+	name()
+	name()
+	name()
+	name()
+	name()
+	name()
+	name()
+	name()
+
+	function reusableFunction(){
+		console.log("Hi World!");
+	}
+
+	reusableFunction();
+
+	//functions with parameters
+	function fWithArgs(a,b){
+		console.log(a+b);
+	}
+
+	fWithArgs(5,7) //adds these two numbers
+
+	// functions with two similer names
+	function fWithArgs(a,b){
+		console.log(a-b);
+	}
+
+	fWithArgs(5,7)
+
+	//counts the latter one
+
+	// Scope of a variable
+
+	//out in html file its global. that means it can be used into everything later
+	var global_var;
+
+	function check(v){
+		var local;  //its local
+		global_var="its";   //can access anytime
+		local="thats"
+
+		oopsGlobal="novar"  //no var what so ever
+
+		console.log(global_var)
+		console.log(local)
+	}
+
+	check()
+
+	console.log(global_var) //no error
+	console.log(oopsGlobal)  //no error became global automaticaly
+	//console.log(local)  //gives an error
+
+
+	// local and global can be of same name
+
+	//returning a value of a function with return
+
+	function something(a,b){
+		return a+b
+	}
+
+	console.log(something(5,6))
+
+</script>
