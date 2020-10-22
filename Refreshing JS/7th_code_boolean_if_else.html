@@ -1,0 +1,101 @@
+<script>
+
+	//boolean
+	function welcomeToBoolean(){
+		return true
+	}
+
+
+	//if statement
+
+	function ourTrueOrFalse(isItTrue){
+		if (isItTrue){
+			return "it is true";
+		}
+		return "no it is false";
+	}
+
+	function trueOrFalse(wasThatTrue){
+		if (wasThatTrue){
+			return "yes, that was true"
+		}
+
+		return "no! That was false!"
+	}
+
+	console.log(trueOrFalse(false))
+
+	//comparision
+	//returns true or false
+
+
+	function testEqual(val){
+		if (val=="12"){  //it was automatically converted to a integer
+			return "equal!";
+		}
+		return "not equal!"
+	}
+
+	console.log(testEqual(12))
+
+	//strict equality operator
+
+	// '==='  it does not convert into common type
+
+	//3===3 true
+	//3==="3" false
+	//3==3 true
+	//3=="3" also true
+
+	function test3Equal(val){
+		if (val==="12"){
+			return "equal!";
+		}
+		return "not equal!"
+	}
+
+	console.log(test3Equal(12))
+
+	//same for not equal (!=)
+	//strict (!==)
+
+	//there is the greater than(>)
+	//less than (<)
+	//there is the greater than or qual to(>=)
+	//less than or equal to (<=)
+
+	//and statment
+	function andState(){
+		if (5<7 && 500<99){
+			return "TRUE";
+		}
+		return "FALSE";
+	}
+
+	console.log(andState())
+
+	//or statment
+	function orState(){
+		if (5<7 || 500<99){
+			return "TRUE";
+		}
+		return "FALSE";
+	}
+
+	console.log(orState())
+
+	//if else statement
+
+	function elseState(val){
+		if (val<=23){
+			return "True"
+		} else if (val>1){
+			return "another true"
+		} else {
+			return "nothing!"
+		}
+	}
+
+	console.log(elseState(55))
+
+</script>
