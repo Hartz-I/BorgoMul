@@ -38,4 +38,91 @@
 	ourDog.bark="bow-wow"
 
 	console.log(ourDog.bark)
+
+
+
+	//checking if an object has a property or not
+	var myObj= {
+		gift: "pony",
+		pet: "kitten",
+		bed: "sleigh"
+	};
+
+	function checkObj(checkProb){
+
+		if (myObj.hasOwnProperty(checkProb)){
+			return myObj[checkProb]
+		} else {
+			return "not found"
+		}
+
+	}
+
+	console.log(checkObj("bed"))
+
+
+	//complex objects
+	//almost all data types can be stored
+	var myMusic=[
+		{
+			"artist": "Billy Joal",
+			"title": "Piano Man",
+			"release year": 1973,
+			"formats": [
+				"CD",
+				"8T",
+				"LP"
+			],
+			"gold": true
+		},
+		{
+			"artist": "rhgr",
+			"title": "hgrhg",
+			"release year": 5485,
+			"formats": [
+				"CefD",
+				"8efT",
+				"LdP"
+			],
+			"gold": true
+		},
+		{
+			"artist": "rhgreg4ghe",
+			"title": "hgefeferhg",
+			"release year": 548535,
+			"formats": [
+				"CefegegD",
+				"8efegegT",
+				"LdPege"
+			],
+			"gold": false
+		}
+
+	]
+
+	//objects can also be nested
+
+	var myMusic2=[
+		{
+			"artist": "Billy Joal",
+			"title": ["Piano Man","fk"],
+			"release year": 1973,
+			"formats":{
+				"CD":"abc",
+				"8T":"bq",
+				"LP":"ptp"
+			},
+			"gold": true
+		}
+	]
+
+	var contents=myMusic2[0].formats.CD
+
+	console.log(contents)
+
+
+	//arrays and objects can also be nested
+	var contents2=myMusic2[0].title[1]
+
+	console.log(contents2)
 </script>
