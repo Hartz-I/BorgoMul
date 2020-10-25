@@ -1,51 +1,40 @@
-//object destructuring!
+/*const person={
+  name: "Mosh",
+  walk() {
+    console.log("walk");
+  }
+};*/
 
-const address={
-  street: "dgd",
-  city: "gd",
-  country: "geeg"
-};
+//what if we wanted to create another person
+// one we can create another object
+/*const person2={
+  name: "Mosh",
+  walk() {
+    console.log("walk");
+  }
+};*/
+//but if we make a mistake we have to correct all of them!
 
-//want to keep them in seperate variables! but it's repeatative!
-//const street= address.street;
-//const city=address.city;
-//const country=address.country;
+//class will solve the problem
 
-//destructuring solves it
+class Person {
+  constructor(name){
+    this.name=name;
 
-const { street, city, country } = address //
+  }
 
-//keeping in an alias
-const { city : st }=address
-
-console.log(st)
-
-
-
-
-//spread operator
-const first=[1,2,3];
-const second = [4,5,6]
-
-const combined=first.concat(second);
-console.log(combined);
-
-//with spread
-const combineds=[...first,"a","b", ...second,"c"];
-console.log(combineds);
-
-const clone=[...first]
-console.log(clone);
-
-//combining two objects
-const one={name: "mosh"};
-const two={job: "Instructor"};
-
-const combine={...one,...two,location: "Australia"};
-
-console.log(combine);
-
-const clone_obj={...one};
-console.log(clone_obj);
+  walk() {
+    console.log("walk"); //press alt+down key to pull down the marked part
+  }
+}
 
 
+const person = new Person("Mosh"); //it is the name in the constructor
+
+console.log(person.name)
+
+class Teacher{
+  job(){
+    console.log("teach");
+  }
+}
