@@ -4,6 +4,7 @@ import Teacher,{promote} from './teacher' //ctr+space to see options
 //we removed the curly brackets from Teacher
 //as it is the default method
 
+
 //Default-> import ... from "";
 //Named->import { ... } from "";
 
